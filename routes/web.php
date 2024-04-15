@@ -10,4 +10,7 @@ Route::get('/productos/{id}/editar', [ProductController::class, 'edit'])->name('
 Route::put('/productos/{id}', [ProductController::class, 'update'])->name('productos.update');
 Route::delete('/productos/{id}', [ProductController::class, 'destroy'])->name('productos.destroy');
 
+Route::get('/', function () {
+    return view('welcome');
+});
 
